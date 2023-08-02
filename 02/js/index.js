@@ -1,0 +1,13 @@
+console.time('Your code Took');
+console.log('Hello Console');
+console.log(4+34);
+console.log(34);
+console.log(true);
+console.log([34,2,1,2]);
+console.log({harry: 'This', marks: 34});
+console.table({harry: 'This', marks: 34});
+console.warn('this is a warning');
+// console.clear();
+console.timeEnd('Your code Took');
+// console.assert(566<189, 'age > 189 this is not posible');
+console.error('this is an error');
