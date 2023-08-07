@@ -5,7 +5,7 @@ console.log('tut3');
 var name = 'harry';
 var channel;
 var marks = 34;
-marks =0;
+marks = 0;
 channel = 'CodewithHarry';
 console.log(name,channel,marks);
 
