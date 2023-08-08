@@ -26,6 +26,7 @@ let number = parseFloat('34.432');
 console.log(number.toFixed(30), (typeof number));
 
 //Type coercion
-let mystr = Number("698");
+let mystr = Number("698"); 
 let mynum = 34;
-console.log(mystr + mynum); //69834
+console.log(mystr + mynum); //69834 -732(after)
+
