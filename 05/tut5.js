@@ -24,3 +24,8 @@ stri = Number([1,2,3,4,5,6,7,8,9]);
 let number = parseFloat('34.432');
 
 console.log(number.toFixed(30), (typeof number));
+
+//Type coercion
+let mystr = Number("698");
+let mynum = 34;
+console.log(mystr + mynum); //69834
