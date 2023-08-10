@@ -21,3 +21,13 @@ arr = ['fruits','vegetables','non-veg'];
 arr.forEach(function(element, index, array) {
     console.log(element, index, array);
 });
+
+var i = 234;
+console.log(i);
+function ui(name) {
+    let i = 9;
+    console.log(i);
+    return `This is a ${name} ui`;
+
+}
+console.log(ui("Harry"), i);
