@@ -9,4 +9,5 @@ a = document.all;
 
 a = document.links[0].href;
 a = document.links[0];
+
 console.log(a);
