@@ -14,7 +14,7 @@ function func2(e){
 function func3(e){
     console.log("Thanks its a mouse down",e);
     e.preventDefault();
-} */
+} 
 
 document.querySelector('.no').addEventListener('mouseenter', function(){
     console.log('You entered no');
@@ -22,8 +22,7 @@ document.querySelector('.no').addEventListener('mouseenter', function(){
 document.querySelector('.no').addEventListener('mouseleave', function(){
     console.log('You have exited');
 }); 
-
-
+*/
 
 document.querySelector('.container').addEventListener('mousemove', function(e){
     console.log(e.offsetX, e.offsetY);
