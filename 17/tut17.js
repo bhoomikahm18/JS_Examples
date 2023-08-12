@@ -9,6 +9,7 @@ document.getElementById('heading').addEventListener('click', function (e) {
     variable = e.offsetY;
     variable = e.clientX;
     // variable = e.clientY;
+    
     console.log(variable);
     // location.href = '//codeWithHarry.com';
 });
