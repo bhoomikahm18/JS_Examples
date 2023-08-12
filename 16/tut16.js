@@ -7,7 +7,7 @@ console.log(ret);
 
 ele.appendChild(anc);
 
-/*let element = document.createElement('li');
+let element = document.createElement('li');
 let text = document.createTextNode('I am a text node');
 element.appendChild(text);
 element.className = 'childul';
@@ -37,4 +37,4 @@ myul.removeChild(document.getElementById('lui'));
 let pr = elem2.hasAttribute('href');
 elem2.removeAttribute('id');
 elem2.setAttribute('title','my elem2 title');
-console.log(elem2,pr);*/
+console.log(elem2,pr);
