@@ -1,10 +1,21 @@
-let element = document.createElement('li');
+let ele = document.querySelector('.container');
+let anc = document.createElement('h1');
+let tn = document.createTextNode('visit website');
+anc.appendChild(tn);
+let ret = anc.setAttribute('href','www.google.com');
+console.log(ret);
+
+ele.appendChild(anc);
+
+/*let element = document.createElement('li');
 let text = document.createTextNode('I am a text node');
 element.appendChild(text);
 element.className = 'childul';
 element.id = 'createdLi';
 
+
 element.setAttribute('title','mytitle');
+
 // element.innerText = 'Hello, This is created by harry';
 // element.innerHTML = '<b> Hello, This is created by harry</b>';
 let ul = document.querySelector('ul.this');
@@ -26,4 +37,4 @@ myul.removeChild(document.getElementById('lui'));
 let pr = elem2.hasAttribute('href');
 elem2.removeAttribute('id');
 elem2.setAttribute('title','my elem2 title');
-console.log(elem2,pr);
+console.log(elem2,pr);*/
