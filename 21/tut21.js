@@ -39,5 +39,12 @@ console.log(event.toLocaleDateString(undefined, options));
 console.log(event.toLocaleDateString(undefined)); //8/16/2023
 console.log(event.toLocaleDateString()); //8/16/2023
 console.log(event.toLocaleString(undefined, {timeZone: 'UTC'})); //8/16/2023, 3:00:00 AM
-console.log(event.toLocaleString('en-GB', {timeZone: 'UTC'})); //8/16/2023, 3:00:00 AM
-console.log(event.toLocaleString('ko-KR', {timeZone: 'UTC'})); //8/16/2023, 3:00:00 AM
+console.log(event.toLocaleString('en-GB', {timeZone: 'UTC'})); //16/08/2023, 03:00:00
+console.log(event.toLocaleString('ko-KR', {timeZone: 'UTC'})); //2023. 8. 16. 오전 3:00:00
+
+//toString(): returns the string representing the date
+const e = new Date('August 19, 1975 23:15:30');
+console.log(e.toString());
+
+//Returns the number of milli second for this date sence begining of jan 1 1970, UTC.
+console.log(event.valueOf());
