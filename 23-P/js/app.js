@@ -1,0 +1,1 @@
+console.log("Welcome To Notes App. This is app.js");
