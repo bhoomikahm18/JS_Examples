@@ -27,6 +27,7 @@ function buttonClickHandler() {
             console.error('Some error occured');
         }
     }
+    
 
     xhr.send();
 }
