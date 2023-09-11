@@ -19,7 +19,13 @@ function buttonClickHandler() {
     }
 
     xhr.onload = function () {
-        console.log("print");
+        if (this.status === 200) {
+            console.log(this.responseText);
+
+        }
+        else {
+            console.error('Some error occured');
+        }
     }
 
     xhr.send();
