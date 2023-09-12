@@ -3,7 +3,7 @@
 console.log("This is my index js file");
 
 // Initialize the news api parameters
-let source = 'the-times-of-india';
+let source = 'The-Times-of-India';
 let apiKey = '4db083447ccd4921831926d5eecbc2fc'
 
 // Grab the news container
