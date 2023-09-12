@@ -24,4 +24,5 @@ function getStudents(){
 
 let newStudent = {name:"Sunny", subject:"Python"}
 enrollStudent(newStudent, getStudents);
+
 // getStudents();
