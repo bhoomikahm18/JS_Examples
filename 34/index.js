@@ -15,6 +15,23 @@ function getData() {
     })
 }
 
-console.log("Before running get data");
-getData();
-console.log("After running get data");
+function postData() {
+    url = "https://dummy.restapiexample.com/api/v1/create";
+    data = '{"name":"fgbhf1231546","salary":"123","age":"23"}';
+    params = {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+    }
+    fetch(url, params).then(response => response.json())
+        .then(data => console.log(data)
+    )
+}
+
+// console.log("Before running get data");
+// getData();
+// console.log("After running get data");
+
+postData();
