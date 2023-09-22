@@ -10,6 +10,7 @@ regex = /h\*rry/;
 // let str = "harry is a good boy and harry is code with harry";
 // str = "hsdbdkvubdkuvb is hadrry"
 // str = "harryi"
+
 let str = "harry means codewith";
 
 let result = regex.exec(str);
