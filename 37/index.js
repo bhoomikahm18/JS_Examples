@@ -28,7 +28,7 @@ let result3 = s.match(reg) //--> This is right
 console.log(result3);
 
 // 4. search() - Returns index of first match else -1.
-let result4 = s.search(reg) 
+let result4 = s.search(reg)
 console.log(result4);
 
 // 5. replace() - Returns new replace string with all the replacements. (If no flag is given, first match will be replaced)
