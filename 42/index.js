@@ -1,4 +1,4 @@
-function fruitsIteratoe(values) {
+function fruitsIterator(values) {
     let nextIndex = 0;
     //we will return an object
     return {
@@ -6,7 +6,7 @@ function fruitsIteratoe(values) {
             if (nextIndex < values.length) {
                 //we will return this object
                 return {
-                    value: values[nextIndex],
+                    value: values[nextIndex++],
                     done: false
                 }
             } else {
@@ -19,5 +19,14 @@ function fruitsIteratoe(values) {
     }
 }
 
+
 const myArray = ['Apples', 'Grapes', 'Oranges', 'Bhindi'];
 console.log("My array is ", myArray);
+
+const fruits =  fruitsIterator(myArray);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
