@@ -20,6 +20,7 @@ email.addEventListener('blur',()=>{
     console.log("email is blurred");
     //Validate email here
 })
+
 phone.addEventListener('blur',()=>{
     console.log("phone is blurred");
     //Validate phone here
