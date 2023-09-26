@@ -28,4 +28,3 @@ const laptop = {
 
 const { model, age, gender, net, start } = laptop
 console.log(model, age, gender, net, start); //HP Pavilion 23 years male 1233 ƒ () { console.log('started') }
-start(); //started
