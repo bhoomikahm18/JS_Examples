@@ -16,3 +16,16 @@ console.log(a, b, c, d);
 const fruits = ['Apple', 'Banana', 'Mangoes'];
 [a, b, c] = fruits;
 console.log(a, b, c);
+
+//Object Destructing
+const laptop = {
+    model: "HP Pavilion",
+    age: "23 years",
+    gender: "male",
+    net: 1233,
+    start: function () { console.log('started') }
+}
+
+const { model, age, gender, net, start } = laptop
+console.log(model, age, gender, net, start); //HP Pavilion 23 years male 1233 ƒ () { console.log('started') }
+start(); //started
