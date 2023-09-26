@@ -20,3 +20,13 @@ body {
     background-color: white;
     border: 3px rgb(1, 1, 51) solid;
 }
+.hold{
+    border: solid red 4px;
+}
+.hide{
+    display: none;
+}
+.dashed{
+    background: lightgoldenrodyellow;
+    border-style: dashed;
+}

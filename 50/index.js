@@ -23,12 +23,12 @@ for (whiteBox of whiteBoxes) {
 
     whiteBox.addEventListener('dragenter', (e) => {
         console.log('Drag enter has been triggered');
-       
+        e.target.className += ' dashed'
     })
 
     whiteBox.addEventListener('dragleave', (e) => {
         console.log('Drag leave has been triggered');
-        
+        e.target.className = 'whiteBox';
     })
 
     whiteBox.addEventListener('drop', (e) => {
