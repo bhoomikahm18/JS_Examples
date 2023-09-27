@@ -45,9 +45,7 @@
     <div class="container">
         <h1 class="my-3">Welcome to PostMaster</h1>
     </div>
-
     <div class="container">
-
         <!-- URL box -->
         <div class="form-group row">
             <label for="url" class="col-sm-2 col-form-label">URL</label>
@@ -55,97 +53,9 @@
                 <input type="text" class="form-control" id="url" placeholder="Enter URL here">
             </div>
         </div>
-
-        <!-- Request type box -->
-        <fieldset class="form-group">
-            <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Request Type</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="requestType" id="get" value="GET" checked>
-                        <label class="form-check-label" for="get">
-                            GET
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="requestType" id="post" value="POST">
-                        <label class="form-check-label" for="post">
-                            POST
-                        </label>
-                    </div>
-
-                </div>
-            </div>
-        </fieldset>
-
-        <!-- Content type box -->
-        <fieldset class="form-group">
-            <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Content Type</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="contentType" id="jsonRadio" value="json"
-                            checked>
-                        <label class="form-check-label" for="json">
-                            JSON
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="contentType" id="paramsRadio" value="params">
-                        <label class="form-check-label" for="params">
-                            Custom Parameters
-                        </label>
-                    </div>
-
-                </div>
-            </div>
-        </fieldset>
-
-        <!-- Parameters box - This will hide on clicking json option in content type  -->
-        <div id="parametersBox">
-            <div class="form-row">
-                <label for="url" class="col-sm-2 col-form-label">Parameter 1</label>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="parameterKey1" placeholder="Enter Parameter 1 Key">
-                </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="parameterValue1" placeholder="Enter Parameter 1 Value">
-                </div>
-                <button id="addParam" class="btn btn-primary">+</button>
-            </div>
-            <div id="params"></div>
-        </div>
-
-        <!-- Json Request box - This will hide on clicking parameters option in content type -->
-        <div class="my-3" id="requestJsonBox">
-            <div class="form-group row">
-                <label for="requestJsonText" class="col-sm-2 col-form-label">Enter Request Json</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" id="requestJsonText" rows="3"></textarea>
-                </div>
-            </div>
-        </div>
-
-        <!-- Submit button which will trigger fetch api -->
-        <div class="form-group row my-2">
-            <div class="col-sm-10">
-                <button id="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-
-        
-        <div class="my-3" id="responseJsonBox">
-                <div class="form-group row">
-                    <label for="responseJsonText" class="col-sm-2 col-form-label">Response</label>
-                    <div class="col-sm-10">
-                        <!-- <textarea class="form-control" id="responseJsonText" rows="3">Your response will appear here</textarea> -->
-
-                        <pre id='responsePre' class="language-javascript"> <code id='responsePrism' class="language-javascript"> Your response will appear here </code> </pre>
-                    </div>
-                </div>
-            </div>
- 
     </div>
+        
+      
 
 
 
