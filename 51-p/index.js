@@ -1,4 +1,11 @@
+function getElementFromString(string){
+    let div = document.createElement('div');
+    div.innerHTML = string;
+    return string.firstElementChild;
+}
 
+//Initialize nuber of parameter
+let addedParamCount = 0;
 // Hide the parameters box initially
 let parametersBox = document.getElementById('parametersBox');
 parametersBox.style.display = 'none';
@@ -31,4 +38,16 @@ addParam.addEventListener('click', () => {
                     </div>
                     <button class="btn btn-primary deleteParam"> - </button>
                     </div>`;
+    // Convert the element string to DOM node
+    let paramElement = getElementFromString(string);
+    params.appendChild(paramElement);
+    // Add an event listener to remove the parameter on clicking - button
+    let deleteParam = document.getElementsByClassName('deleteParam');
+    for (item of deleteParam) {
+        item.addEventListener('click', (e) => {
+            // TODO: add a confirmation box to confirm parameter deletion
+            e.target.parentElement.remove();
+        })
+    }
+    addedParamCount++;
 })
