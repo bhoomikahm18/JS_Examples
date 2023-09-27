@@ -1,5 +1,6 @@
 
 // Utility functions:
+
 // 1. Utility function to get DOM element from string
 function getElementFromString(string) {
     let div = document.createElement('div');
@@ -111,7 +112,7 @@ submit.addEventListener('click', () => {
                 "Content-type": "application/json; charset=UTF-8"
               }  
         })
-        
+
         .then(response=> response.text())
         .then((text) =>{
             // document.getElementById('responseJsonText').value = text;
