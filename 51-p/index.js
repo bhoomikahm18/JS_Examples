@@ -63,7 +63,10 @@ submit.addEventListener('click', () => {
     // document.getElementById('responseJsonText').value = "Please wait.. Fetching response...";
     document.getElementById('responsePrism').innerHTML = "Please wait.. Fetching response...";
 
-    
+    // Fetch all the values user has entered
+    let url = document.getElementById("url").value;
+    let requestType = document.querySelector("input[name='requestType']:checked").value;
+    let contentType = document.querySelector("input[name='contentType']:checked").value;
  
     // If user has used params option instead of json, collect all the parameters in an object
     if (contentType == 'params') {
